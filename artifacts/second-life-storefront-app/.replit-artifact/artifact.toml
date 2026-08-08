@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Second Life Storefront"
+description = "A polished resale fashion storefront for pre-owned women's formalwear, with collection browsing, product details, cart and checkout interactions, and a guided sell-with-us submission flow."
+version = "1.0.0"
+id = "artifacts/second-life-storefront-app"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23333
+
+[services.development]
+run = "pnpm --filter @workspace/second-life-storefront-app run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/second-life-storefront-app", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/second-life-storefront-app/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23333"
+BASE_PATH = "/"
