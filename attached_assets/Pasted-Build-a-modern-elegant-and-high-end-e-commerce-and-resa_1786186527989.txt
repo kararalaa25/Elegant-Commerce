@@ -1,0 +1,37 @@
+Build a modern, elegant, and high-end e-commerce and resale web platform for pre-owned women's formalwear (dresses, evening gowns, tailored suits, and blazers). The brand aesthetic should feel like a luxury boutique meets sustainable fashion (think clean minimal lines, sophisticated typography, a neutral color palette with soft accent tones like rose gold or sage green, and plenty of whitespace).
+
+### Core Features & Pages Required:
+
+1. **Homepage:**
+   - A stunning hero section with a value proposition headline (e.g., "Give Luxury a Second Life") and primary Call-to-Action buttons ("Shop Collection" and "Sell Your Dress").
+   - Featured categories grid (Evening Gowns, Cocktail Dresses, Tailored Suits, Two-Piece Sets).
+   - "Just In" newly curated items section with clear pricing and condition badges (e.g., "Worn Once", "Like New").
+   - Trust badges section (Authenticated Quality, Dry-Cleaned & Inspected, Sustainable Fashion).
+
+2. **Shop / Collection Page:**
+   - Advanced sidebar filters: Category, Size (US/UK/EU), Brand, Color, Condition, and Price Range.
+   - Product cards displaying high-quality imagery, item title, original retail price vs. resale price, size, and condition tag.
+   - Sorting dropdown (Price: Low to High, Price: High to Low, Newest Arrivals).
+
+3. **Product Detail Page:**
+   - Image gallery with thumbnail switcher to view multiple angles of the dress/suit.
+   - Clear display of sizing details, fabric composition, original retail price, and your resale price (highlighting the savings percentage).
+   - Detailed condition description box.
+   - "Add to Cart" and "Buy Now" checkout buttons.
+
+4. **"Sell With Us" / Consignment or Direct Purchase Portal:**
+   - A multi-step interactive form where customers can submit items they want to sell.
+   - Step 1: Item details (Brand, Category, Original Price, Size, Number of times worn, Condition notes).
+   - Step 2: Image upload area for front, back, label, and any flaw photos.
+   - Step 3: Contact information and payout preference (Store credit vs. Cash payout offer).
+   - Success confirmation screen letting them know their submission is under review.
+
+5. **User Account / Dashboard:**
+   - Order history for buyers.
+   - Submission tracker for sellers to see the status of items they sent in (Pending Review, Accepted, Listed, Sold, Paid Out).
+
+6. **Shopping Cart & Checkout Flow:**
+   - Slide-over or dedicated cart page with order summary.
+   - Clean checkout form layout for shipping address and payment method.
+
+Ensure the UI is fully responsive, polished, uses modern Tailwind CSS components, and includes smooth micro-interactions.
