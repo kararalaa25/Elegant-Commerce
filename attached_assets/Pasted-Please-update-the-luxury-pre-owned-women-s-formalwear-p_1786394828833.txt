@@ -1,0 +1,66 @@
+Please update the luxury pre-owned women's formalwear platform to include a full Authentication Flow (Phone + WhatsApp OTP) and a complete Admin Dashboard with full administrative control.
+
+Here are the specific implementation details:
+
+---
+
+### 1. Header & Navigation Updates
+- Add prominent **"Sign In"** / **"Sign Up"** and **"Account"** buttons to the top sticky navbar across all pages.
+- Add an **"Admin Login"** link in the footer or quick-access menu.
+- Display user avatar or phone number when logged in, with a dropdown menu linking to "My Purchases", "My Submissions", and "Sign Out".
+
+---
+
+### 2. Authentication System (Phone + WhatsApp OTP)
+- **Sign In / Sign Up Modal or Page**:
+  - Clean, minimal modal adhering to the luxury aesthetic (neutral tones, clean typography).
+  - **Phone Number Field**: Preset default country code to Iraq (+964) with country selector option (+964 7XX XXX XXXX).
+  - **Verification Step**: Upon submitting the phone number, transition to a 6-digit OTP input screen with a "Resend OTP via WhatsApp" countdown timer.
+  - **WhatsApp Simulation**: Include a visual badge/notification indicating: *"OTP code sent via WhatsApp to +964..."*
+  - **Profile Setup (First-time Users)**: If the number is new, prompt for Full Name, Email (optional), and Default Shipping Address after OTP verification.
+
+---
+
+### 3. Admin Login & Authentication
+- Add a dedicated Admin Login interface (`/admin/login`).
+- **Default Hardcoded Credentials**:
+  - **Username**: `ADMIN2016`
+  - **Password**: `ADMIN2016`
+- Redirect authenticated admin users directly to the `/admin/dashboard`.
+
+---
+
+### 4. Comprehensive Admin Dashboard (`/admin/dashboard`)
+Design a high-end, clean dark/light toggle admin panel with a sidebar navigation containing the following sections:
+
+#### A. Overview Analytics:
+- Key metrics tiles: Total Revenue, Active Listings, Pending Consignment Approvals, Completed Payouts, Total Registered Users.
+- Graphical charts for sales trends and new seller submissions.
+
+#### B. Seller Submissions Management ("Sell With Us" Requests):
+- Table view of all user item submissions with filters: `Pending Review`, `Approved`, `Rejected`, `Listed`, `Sold`.
+- **Review Modal for Admin**: View submitted front/back/label images, brand, seller condition notes, and requested payout.
+- Actions: 
+  - **Approve & Set Listing Price** (Auto-publishes item to the Shop page).
+  - **Reject** (With optional reason sent to user dashboard).
+  - **Trigger Payout** (Mark item as Paid Out via Cash/Store Credit).
+
+#### C. Catalog & Product Management:
+- Ability to manually add, edit, or delete listings directly.
+- Toggle product visibility, update pricing, change condition tags (`Like New`, `Worn Once`, etc.), or mark items as `Sold Out`.
+
+#### D. Orders Management:
+- List of all buyer purchases with status badges (`Processing`, `Shipped`, `Delivered`, `Cancelled`).
+- Detail view showing shipping address, buyer's phone number (+964), items purchased, and total paid.
+
+#### E. User & Seller Management:
+- List of all registered phone numbers (+964 format), order histories, and consignment activity.
+
+---
+
+### 5. Data Flow Integration
+- Submissions created in the user-facing "Sell With Us" portal must immediately populate in the Admin Dashboard under "Pending Submissions".
+- Approved submissions must immediately appear on the Shop/Collection page and Main Homepage grid.
+- Purchases made by a user logged in via phone number must auto-link to their User Dashboard under "Order History".
+
+Ensure the UI remains sleek, responsive, highly polished, and fully functional with interactive mock state management.
