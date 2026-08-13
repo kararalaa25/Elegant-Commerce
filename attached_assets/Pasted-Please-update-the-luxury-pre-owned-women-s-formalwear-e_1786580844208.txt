@@ -1,0 +1,54 @@
+Please update the luxury pre-owned women's formalwear e-commerce platform to be natively tailored for the Iraqi market, with Arabic as the primary default language and full bilingual support.
+
+Here are the specific layout, localization, and functional requirements:
+
+---
+
+### 1. Language & Localization (Arabic First + English Toggle)
+- **Default Language**: Set the entire site's default language to **Arabic (iq-AR)** with full **RTL (Right-to-Left)** layout support.
+- **Language Switcher Toggle**:
+  - Add an elegant, minimal language toggle button in the top header menu (`العربية | EN`).
+  - Toggling between Arabic and English must seamlessly swap text content and dynamically flip the page layout between RTL (Right-to-Left) and LTR (Left-to-Right) without breaking the design layout.
+- **Currency**: Display prices natively in **Iraqi Dinar (IQD)** (e.g., "250,000 د.ع") with an option to display USD ($) in the English toggle if applicable.
+
+---
+
+### 2. Clean & Minimalist Hero Section (Homepage)
+- **Design Aesthetic**: High-end luxury boutique feel—ultra-clean, uncluttered, neutral tones (off-white, cream, soft beige, with subtle rose gold or dark charcoal accents), generous whitespace, and sleek typography.
+- **Hero Layout**:
+  - A subtle background (or soft high-fashion lifestyle imagery/video background with overlay).
+  - **Arabic Headline (Default)**: "أناقة مستدامة.. تليق بكِ" or "امنحي الفخامة حياة جديدة"
+  - **English Headline**: "Give Luxury a Second Life"
+  - **Arabic Subheadline**: "منصة فاخرة لشراء وبيع أرقى فساتين السهرة والأزياء الرسمية للأناقة المستدامة في العراق."
+  - **English Subheadline**: "Iraq’s premier luxury consignment marketplace for pre-owned evening gowns, suits, and designer formalwear."
+  - **Dual CTAs**:
+    - Primary Button: "تسوقي المجموعة" / "Shop Collection"
+    - Secondary Outline Button: "بيعي فستانكِ" / "Sell Your Item"
+
+---
+
+### 3. Authentication & Header Navigation
+- **Header Elements**:
+  - Top sticky navigation with logo, main links (Home, Collection, Sell With Us, About), Language Switcher (`العربية | EN`), Cart icon, and a prominent **"تسجيل الدخول / حساب جديد" ("Sign In / Sign Up")** button.
+- **Phone + WhatsApp OTP Auth**:
+  - Preset phone input with Iraq country code **+964** (e.g., `+964 7XX XXX XXXX`).
+  - Simulated WhatsApp OTP verification modal screen with 6-digit input.
+  - Arabic/English micro-copy indicating that the OTP code was sent via WhatsApp.
+
+---
+
+### 4. Admin Dashboard (`/admin/login` & `/admin/dashboard`)
+- **Admin Access Point**: Include an "Admin Login" link in the footer or account menu.
+- **Credentials**:
+  - Username: `ADMIN2016`
+  - Password: `ADMIN2016`
+- **Dashboard Features**:
+  - Arabic/English toggle support inside the admin interface as well.
+  - Manage "Sell With Us" submissions (Pending, Approved, Rejected, Paid Out).
+  - Product Catalog Manager (Add/edit dresses, set IQD pricing, condition tags, size options).
+  - Order History & Customer Directory showing registered Iraqi phone numbers (+964).
+
+---
+
+### 5. Seamless Flow Integration
+- Ensure all user-submitted dresses from "Sell With Us" go directly to the Admin Dashboard for approval before appearing live on the Arabic/English shop grid.

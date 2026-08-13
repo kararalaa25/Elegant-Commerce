@@ -1,0 +1,51 @@
+Please add a luxury AI Stylist / Personal Shopping Assistant widget to the platform that helps customers choose sizes, select colors, pair outfits, and answer questions about pre-owned formalwear.
+
+Here are the specific layout, styling, and functional requirements for the AI Assistant:
+
+---
+
+### 1. Floating AI Assistant Launcher & Chat Interface
+- **Floating Button / Trigger**:
+  - Add a sleek, sticky chat button at the bottom-right corner (or bottom-left in Arabic RTL mode) with a luxury sparkle/stylist icon.
+  - Label badge: "المستشارة الشخصية | AI Stylist"
+- **Chat Window Aesthetic**:
+  - A clean, modern slide-up panel or modal following the neutral luxury palette (soft off-white/cream background, charcoal text, soft rose gold accents).
+  - Header: Displays assistant name (e.g., "نورا - مستشارتكِ الخاصة" / "Noura - Your Personal AI Stylist") with an "Online" status indicator and a language toggle option matching the site's default language (Arabic / English).
+
+---
+
+### 2. Core Capabilities & Interactive Features
+- **Size & Fit Guide Assistant**:
+  - Asks the customer for their body measurements (bust, waist, hips, height) or standard US/UK/EU dress sizes.
+  - Recommends the exact size to select for specific dresses/suits listed on the site and warns if a vintage or tailored item runs small/large.
+- **Color & Occasion Advisor**:
+  - Suggests dress colors based on skin undertones, event themes (e.g., Iraqi weddings, henna nights, formal galas, graduation ceremonies), and season.
+- **Mix & Match / Accessories Recommendation**:
+  - Suggests matching shoes, bags, or jewelry from the store catalog to complete an outfit.
+- **Pre-owned Quality & Authenticity Q&A**:
+  - Answers questions regarding item condition tags ("Like New", "Worn Once"), dry-cleaning protocols, and the return/exchange policy.
+
+---
+
+### 3. Quick-Action Interactive Chip Buttons
+Inside the chat window, display quick-prompt chips at the bottom so users can ask common questions in one click:
+- 🇸🇾/🇮🇶 **Arabic Chips**:
+  - "ساعديني في اختيار القياس المناسب 📏"
+  - "ما هي الألوان المناسبة لمناسبة مسائية؟ ✨"
+  - "كيف أضمن جودة الفستان المستعمل؟ 👗"
+  - "اقترحي لي فستان زفاف أو خطوبة 💍"
+- 🇬🇧 **English Chips**:
+  - "Find my ideal size 📏"
+  - "Styling advice for an evening event ✨"
+  - "How do you verify dress conditions? 👗"
+
+---
+
+### 4. Smart Integration with Shop Catalog
+- The AI assistant should have full context of the active products in the shop catalog.
+- When recommending an item, it must display interactive **Product Cards directly inside the chat window** showing the dress photo, title, size, and price in IQD (د.ع) with a direct "View Dress" or "Add to Cart" button.
+
+---
+
+### 5. Full Bilingual & Directional Support
+- The AI chat interface must seamlessly adapt to Arabic (RTL) when the main site is set to Arabic, and English (LTR) when switched to English.
